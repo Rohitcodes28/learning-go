@@ -60,7 +60,20 @@ func main() {
 	total_deck_cards := len(cards)
 	fmt.Println("total cards in deck are", total_deck_cards)
 
-	cards.print()
+	// print all cards and values without comama anything raw data
+	// cards.print()
+	// it should call function and put all values there its syntax correct ideally
+	// how to assign multiple values in multi value return function
+
+	// deal(cards , 5)
+
+	// assigning values.   1st value will be assigned to first here like that
+
+	hand, remianingdeck := deal(cards, 7)
+	fmt.Println("printing 7 cards ")
+	hand.print()
+	fmt.Println("remaining in deck")
+	remianingdeck.print()
 
 }
 
