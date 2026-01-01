@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // create a new type deck  which is just a slice of strings
 
@@ -60,3 +63,12 @@ func deal(d deck, hand int) (deck, deck) {
 
 
 */
+
+// FILE HANDLING
+
+// we need a function that can combine a slice of string into string and make sure that we get a final string before writing to file
+
+func (d deck) toString() string {
+	return strings.Join([]string(d), ",")
+	// we are converting the deck back to slice of strings as deck is our datatype not generic to go
+}

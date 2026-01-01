@@ -30,6 +30,7 @@ func main() {
 
 // array is of fixed length and slice can have variable lengths.
 
+/*
 func main() {
 
 	// defining a slice and adding a new value using append, using function to add value to slice
@@ -75,10 +76,29 @@ func main() {
 	fmt.Println("remaining in deck")
 	remianingdeck.print()
 
+	// EXMAPLE of TYPE CONVERSION.  we write the type to convert to and the string like []byte (greetings)
+	greetings := "Hi There"
+	fmt.Println(greetings)
+	fmt.Println("converted")
+
+	fmt.Println([]byte(greetings))
+
 }
+*/
 
 //sample function declaration
 
 // func newCard() string {
 // 	return "Five of Diamonds"
 // }
+
+// FUNCTION MAIN AGAIN  for FILE HANDLING
+
+func main() {
+
+	cards := newdeck()
+	// printing the whole string connected by ,
+
+	fmt.Println(cards.toString())
+
+}
