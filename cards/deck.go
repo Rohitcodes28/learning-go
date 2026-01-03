@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -71,4 +72,25 @@ func deal(d deck, hand int) (deck, deck) {
 func (d deck) toString() string {
 	return strings.Join([]string(d), ",")
 	// we are converting the deck back to slice of strings as deck is our datatype not generic to go
+}
+
+// Reading and writing to a file
+
+// the io/ioutil is deprecated as part of 1.16  so take the os package
+
+func (d deck) saveToFile(filename string) error {
+	return os.WriteFile(filename, []byte(d.toString()), 0666)
+}
+
+// Retriving the deck from a file
+// converting the byte to back string and split again based on the "," so that we can again make the deck
+func newDeckFromFile(filename string) deck {
+	bs, err := os.ReadFile(filename)
+	if err != nil {
+		fmt.Println("Error:", err)
+		os.Exit(1)
+	}
+	s := strings.Split(string(bs), ",")
+	return deck(s)
+
 }

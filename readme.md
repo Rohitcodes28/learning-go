@@ -6,4 +6,10 @@
 
     5. A function can have multiple return values.
 
+    6. using the os.WriteFile and ReadFile function we can write in to the file as a [] byte and its a ascii form of the string and get it back the same way.  It is not able to read we can also the error handling for the same.
+
+    7.  At the same place we can provide the error handling options as well. like the exit codes and the status of the exit code can be non zero for handling the errors and thus can be made sure that its working as expected.
+
+
+
 

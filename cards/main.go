@@ -101,4 +101,16 @@ func main() {
 
 	fmt.Println(cards.toString())
 
+	fmt.Println([]byte(cards.toString()))
+
+	// code to save the deck to a file named deckFile
+
+	// cards.saveToFile("deckFile")
+
+	// READ get the deck from the saved file
+
+	fmt.Println("Getting the deck form the file and restoring it as it is")
+	newdeck := newDeckFromFile("decFile")
+	newdeck.print()
+
 }
