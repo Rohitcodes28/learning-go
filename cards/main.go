@@ -109,8 +109,20 @@ func main() {
 
 	// READ get the deck from the saved file
 
-	fmt.Println("Getting the deck form the file and restoring it as it is")
-	newdeck := newDeckFromFile("decFile")
-	newdeck.print()
+	// fmt.Println("Getting the deck form the file and restoring it as it is")
+	// newdeck := newDeckFromFile("decFile")
+	// newdeck.print()
+
+	// Shuffling the deck so that we can have a random number
+
+	fmt.Println("before shuffle cards")
+
+	fmt.Println(cards)
+
+	fmt.Println("after shuffle cards")
+
+	shuffledcards := cards.shuffle()
+
+	fmt.Println(shuffledcards)
 
 }

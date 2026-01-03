@@ -10,6 +10,10 @@
 
     7.  At the same place we can provide the error handling options as well. like the exit codes and the status of the exit code can be non zero for handling the errors and thus can be made sure that its working as expected.
 
+    8. The os.exit () fuction is supposed to get the status code 0 only for the pass in case of failed its expected to give the status code of 1-n
+
+    9. No inbuilt package to shuffle the deck
+
 
 
 

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"os"
 	"strings"
 )
@@ -93,4 +94,14 @@ func newDeckFromFile(filename string) deck {
 	s := strings.Split(string(bs), ",")
 	return deck(s)
 
+}
+
+// this is the function call to shuffle all the cards.
+// WE have used rand.shuffle we can also use INTn and make a random number to each card and then arrnage it
+
+func (d deck) shuffle() deck {
+	rand.Shuffle(len(d), func(i, j int) {
+		d[i], d[j] = d[j], d[i]
+	})
+	return d
 }
