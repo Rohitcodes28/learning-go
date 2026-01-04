@@ -12,7 +12,10 @@
 
     8. The os.exit () fuction is supposed to get the status code 0 only for the pass in case of failed its expected to give the status code of 1-n
 
-    9. No inbuilt package to shuffle the deck
+    9. No inbuilt package to shuffle the deck.
+
+    10. Go does not proivide data like the 10 test cases were executed it just gives the name that the test case passed it only assumes that something  terriblke is not failing inside our function. 
+    
 
 
 
