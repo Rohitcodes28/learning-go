@@ -2,9 +2,22 @@ package main
 
 import "fmt"
 
+// embedded struct examples
+
+type contactInfo struct {
+	email   string
+	zipcode int
+}
+
 type Person struct {
 	FirstName string
 	LastName  string
+}
+
+type jim struct {
+	FirstName string
+	LastName  string
+	contact   contactInfo
 }
 
 func main() {
@@ -34,5 +47,15 @@ func main() {
 	Alex1.LastName = "Anderson"
 
 	fmt.Printf("%+v", Alex1)
+
+	//Make sure that a struct always ends a line with a " , "  never forget that even if the last line is there the comma should be there.
+	RealName := jim{
+		FirstName: "jim",
+		LastName:  "anderson",
+		contact: contactInfo{email: "jim@gmail.com",
+			zipcode: 140021,
+		},
+	}
+	fmt.Printf("%+v", RealName)
 
 }

@@ -23,6 +23,9 @@
 
     If the variable is defined but no value defined it automatically deifnes the zero values like string has "" int has 0 etc. 
 
+    A struct can also have a struct inside embedding of struct is allowed and its helpful to make a very detailed and complex data types
+
+    
 
 
 
