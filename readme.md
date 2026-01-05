@@ -14,8 +14,16 @@
 
     9. No inbuilt package to shuffle the deck.
 
-    10. Go does not proivide data like the 10 test cases were executed it just gives the name that the test case passed it only assumes that something  terriblke is not failing inside our function. 
-    
+    10. Go does not proivide data like the 10 test cases were executed it just gives the name that the test case passed it only assumes that something  terriblke is not failing inside our function.
+
+    STRUCTS
+
+    Its kind of a dictionary in python and its there for the golang to make sure we can add a dataset that has like 2 strings related.
+    so we have a struct that can have a person's name first name and last name both strings and that is a struct.
+
+    If the variable is defined but no value defined it automatically deifnes the zero values like string has "" int has 0 etc. 
+
+
 
 
 
