@@ -21,13 +21,17 @@
     Its kind of a dictionary in python and its there for the golang to make sure we can add a dataset that has like 2 strings related.
     so we have a struct that can have a person's name first name and last name both strings and that is a struct.
 
-    If the variable is defined but no value defined it automatically deifnes the zero values like string has "" int has 0 etc. 
+    If the variable is defined but no value defined it automatically deifnes the zero values like string has "" int has 0 etc.
 
     A struct can also have a struct inside embedding of struct is allowed and its helpful to make a very detailed and complex data types
 
-    
+
+    GO is a PASS BY VALUE language the RAM is seprately allocated  and is copied in case of allocation to another variable.
 
 
 
 
 
+
+
+![alt text](image.png)

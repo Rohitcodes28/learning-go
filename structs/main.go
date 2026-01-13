@@ -1,4 +1,4 @@
-package main
+package struct
 
 import "fmt"
 
@@ -56,6 +56,26 @@ func main() {
 			zipcode: 140021,
 		},
 	}
-	fmt.Printf("%+v", RealName)
+	//basic print can also be part of a receiver function
+	//fmt.Printf("%+v", RealName)
+	RealName.print()
 
+	RealName.UpdateFirstName("jimmy")
+	fmt.Println("the updated name below")
+
+	RealName.print()
+
+
+	// as it directly did not work because its a passs by value language  so we have to use pointers 
+
+}
+
+func (p jim) print() {
+	fmt.Printf("%+v", p)
+}
+
+// we will try to update the  first name of the jim here at
+
+func (p jim) UpdateFirstName(newFirstName string) {
+	p.FirstName = newFirstName
 }
