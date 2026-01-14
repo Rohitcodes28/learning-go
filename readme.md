@@ -35,3 +35,13 @@
 
 
 ![alt text](image.png)
+
+
+MAPS in Golang
+
+In maps both keys and values are static. The  keys should be of one type and the values should be of one type.
+they both can be different like keys as string and values as int but 2 values has to be same.
+
+
+
+
