@@ -42,6 +42,22 @@ MAPS in Golang
 In maps both keys and values are static. The  keys should be of one type and the values should be of one type.
 they both can be different like keys as string and values as int but 2 values has to be same.
 
+In maps the string can always be accessed through [] not by . like map.value as it might be int
 
+
+MAPS   vs SRUCT
+
+![alt text](image-1.png)
+
+
+
+
+
+IMPORTANT NOTES
+
+%v is used to print the value of the arguments
+%T is used to print the type of the arguments
+
+The switch statement in Go is similar to the ones in C, C++, Java, JavaScript, and PHP. The difference is that it only runs the matched case so it does not need a break statement.
 
 
