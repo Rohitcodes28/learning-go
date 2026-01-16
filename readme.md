@@ -53,6 +53,20 @@ MAPS   vs SRUCT
 
 
 
+
+INTERFACES
+
+Interface is the common ground for functions that are similar but receiver functions of different type
+Interface is making a third type that accepts both differnt types and hence can be used to define and call a common function
+
+1. interfaces are not generic types.
+2. interfaces are implicit declare and use. not defining any link between any.
+3. interfaces are just contracts if the internal  functions break interface can't do anything really.
+4. interface is tough and can be used the ideal ones from the library not required just for the code quality.
+
+
+
+
 IMPORTANT NOTES
 
 %v is used to print the value of the arguments
@@ -60,4 +74,13 @@ IMPORTANT NOTES
 
 The switch statement in Go is similar to the ones in C, C++, Java, JavaScript, and PHP. The difference is that it only runs the matched case so it does not need a break statement.
 
+It can also have multiple caees like case 1,3 6 : like that multiple match cases
 
+
+
+
+
+Possible go questions
+
+1. what is a receiver function?
+2. what is the difference between the concrete types and interface
