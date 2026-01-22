@@ -1,5 +1,5 @@
-    1. In Go we have multiple packages. If the package is main it must have a main function as well and it’s a executable package where as if there is any other name it will be the reuseable package. 
-    2. We can do go run, go build  and many others like go fmt (format code), test , install, get  etc. 
+    1. In Go we have multiple packages. If the package is main it must have a main function as well and it’s a executable package where as if there is any other name it will be the reuseable package.
+    2. We can do go run, go build  and many others like go fmt (format code), test , install, get  etc.
     3. Multiple files with same package name will be considered as that one package one can have multiple files all starting with package main
 
     4. We can use all the inbuilt packages or the packages created by the common people.
@@ -63,6 +63,9 @@ Interface is making a third type that accepts both differnt types and hence can 
 2. interfaces are implicit declare and use. not defining any link between any.
 3. interfaces are just contracts if the internal  functions break interface can't do anything really.
 4. interface is tough and can be used the ideal ones from the library not required just for the code quality.
+5. Multiple interfaces can assemble to make a single interface.
+
+
 
 
 
